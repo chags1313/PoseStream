@@ -37,6 +37,5 @@ mode = st.sidebar.selectbox("Mode", ["off", "sendonly", "recvonly", "sendrecv"])
 # Start the webrtc streamer with the custom video transformer
 webrtc_streamer(
     key=key,
-    mode=mode,
     video_transformer_factory=HolisticTransformer,
     async_transform=True)
